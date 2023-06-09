@@ -26,7 +26,6 @@ class Stack
                 array[i] = src.array[i];
             }
         }
-
         bool isEmpty()
         {
             return mtop < 0;
