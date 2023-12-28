@@ -17,6 +17,7 @@ public:
     ~Vector(){ delete[] m_ptr;}                               /// destructor
 
     T operator[](const size_t index);
+    
 
     template<typename U>
     void push_back(U&& value);  /// universal reference/perfect forwarding
