@@ -65,7 +65,7 @@ void Heap<T>::maxHeapify(size_t index)
 template<typename T>
 void Heap<T>::buildMaxHeap()
 {
-    size_t i = (heap_size - 1)/2;                                   ///last root node // bottom up cheaking
+    size_t i = heap_size / 2 - 1;                                   ///last root node // bottom up cheaking
     while(i != SIZE_MAX)
     {
         maxHeapify(i);
