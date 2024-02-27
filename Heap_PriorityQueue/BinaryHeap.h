@@ -125,8 +125,10 @@ void Heap<T>::increaseKey(size_t index,size_t value)    ///increase priority
 template<typename T>
 void Heap<T>::print() const
 {
-    for(const T& item : array)
-        std::cout << item << " "; 
+    for(int i = 0; i < heap_size; ++i)
+    {
+        std::cout << array[i] << ' ';
+    }
 
     std::cout << std::endl;
 }
