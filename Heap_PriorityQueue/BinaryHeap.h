@@ -112,7 +112,7 @@ void Heap<T>::increaseKey(size_t index,size_t value)    ///increase priority
 {
     if(value < array[index])
     {
-        throw std::exception("value you entered is smaller than exciting priority value");
+        throw std::logic_error("value you entered is smaller than exciting priority value");
     }
     array[index] = value;
     while(index > 0 && array[index] > array[(index-1)/2])
